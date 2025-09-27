@@ -1,0 +1,38 @@
+# AI Image Generator CLI
+
+A simple Python command-line tool to generate images from text prompts using the OpenAI DALL·E API.
+
+## Setup
+
+1. Clone this repo or copy the `image_generator` folder.
+2. Install dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+3. Get your OpenAI API key and create a `.env` file:
+    ```
+    cp .env.example .env
+    ```
+   Edit `.env` and add your API key.
+
+## Usage
+
+Generate an image with a text prompt:
+```
+python main.py "A futuristic cityscape at sunset"
+```
+Save to custom file:
+```
+python main.py "A panda surfing a wave" --output panda.png
+```
+
+## Environment Variables
+
+Set in `.env`:
+```
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+## Notes
+- This tool uses [OpenAI DALL·E API](https://platform.openai.com/docs/guides/images).
+- Results and usage limits depend on your API plan.
